@@ -14,9 +14,8 @@ Summary: Set of functions to make the processing and analysis of surveys easier 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-questionr-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-questionr-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-questionr-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-questionr-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-questionr-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-questionr-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-questionr-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-questionr-feedstock)
 
 Current release info
 ====================
