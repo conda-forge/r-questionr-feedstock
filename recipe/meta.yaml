@@ -54,7 +54,7 @@ test:
 
 about:
   home: https://juba.github.io/questionr/
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: 'Set of functions to make the processing and analysis of surveys easier : interactive shiny apps and addins for data recoding, contingency tables, dataset metadata handling, and several convenience functions.'
   license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
@@ -62,9 +62,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
