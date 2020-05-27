@@ -27,21 +27,25 @@ requirements:
   host:
     - r-base
     - r-classint
+    - r-haven >=2.3.0
     - r-highr
     - r-htmltools
-    - r-labelled >=1.0.0
+    - r-labelled >=2.4.0
     - r-miniui
     - r-rstudioapi
     - r-shiny >=1.0.5
+    - r-styler
   run:
     - r-base
     - r-classint
+    - r-haven >=2.3.0
     - r-highr
     - r-htmltools
-    - r-labelled >=1.0.0
+    - r-labelled >=2.4.0
     - r-miniui
     - r-rstudioapi
     - r-shiny >=1.0.5
+    - r-styler
 
 test:
   commands:
