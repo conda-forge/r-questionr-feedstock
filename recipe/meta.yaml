@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/questionr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/questionr/questionr_{{ version }}.tar.gz
-  sha256: c4566880a1ca8f01faad396e20d907d913f4a252acaf83a0cb508a3738874cb3
+  sha256: 4c88758c161dd77571f7cdce98b0aeb9dab3187d1f19e9b1cfcf9a6ee4240be6
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -27,21 +27,25 @@ requirements:
   host:
     - r-base
     - r-classint
+    - r-haven >=2.3.0
     - r-highr
     - r-htmltools
-    - r-labelled >=1.0.0
+    - r-labelled >=2.4.0
     - r-miniui
     - r-rstudioapi
     - r-shiny >=1.0.5
+    - r-styler
   run:
     - r-base
     - r-classint
+    - r-haven >=2.3.0
     - r-highr
     - r-htmltools
-    - r-labelled >=1.0.0
+    - r-labelled >=2.4.0
     - r-miniui
     - r-rstudioapi
     - r-shiny >=1.0.5
+    - r-styler
 
 test:
   commands:
@@ -50,19 +54,11 @@ test:
 
 about:
   home: https://juba.github.io/questionr/
-  license: GPL (>= 2)
-  summary: 'Set of functions to make the processing and analysis of surveys easier : interactive
-    shiny apps and addins for data recoding, contingency tables, dataset metadata handling,
-    and several convenience functions.'
+  license: GPL-2.0-or-later
+  summary: 'Set of functions to make the processing and analysis of surveys easier : interactive shiny apps and addins for data recoding, contingency tables, dataset metadata handling, and several convenience functions.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
