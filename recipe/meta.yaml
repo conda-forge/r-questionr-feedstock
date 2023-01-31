@@ -1,4 +1,4 @@
-{% set version = "0.7.7" %}
+{% set version = "0.7.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/questionr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/questionr/questionr_{{ version }}.tar.gz
-  sha256: ce24c40bd98dbeca615b9eb2a9cd2da26852821dc3840f8394eeecb0739dfd56
+  sha256: af72e59fe652c6063282a7e5b0f487993b9361cc9ed052a632d64a5a6db76ba9
 
 build:
   noarch: generic
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
